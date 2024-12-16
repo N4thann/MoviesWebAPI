@@ -1,0 +1,347 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj": {}
+  },
+  "projects": {
+    "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\Application\\MoviesAPI.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\Application\\MoviesAPI.Application.csproj",
+        "projectName": "MoviesAPI.Application",
+        "projectPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\Application\\MoviesAPI.Application.csproj",
+        "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
+        "outputPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Windows 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Domain\\MoviesAPI.Domain.csproj": {
+                "projectPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Domain\\MoviesAPI.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Domain\\MoviesAPI.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Domain\\MoviesAPI.Domain.csproj",
+        "projectName": "MoviesAPI.Domain",
+        "projectPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Domain\\MoviesAPI.Domain.csproj",
+        "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
+        "outputPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Windows 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.Data\\MoviesAPI.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.Data\\MoviesAPI.Infra.Data.csproj",
+        "projectName": "MoviesAPI.Infra.Data",
+        "projectPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.Data\\MoviesAPI.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
+        "outputPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Windows 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Domain\\MoviesAPI.Domain.csproj": {
+                "projectPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Domain\\MoviesAPI.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.IoC\\MoviesAPI.Infra.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.IoC\\MoviesAPI.Infra.IoC.csproj",
+        "projectName": "MoviesAPI.Infra.IoC",
+        "projectPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.IoC\\MoviesAPI.Infra.IoC.csproj",
+        "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
+        "outputPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.IoC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Windows 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\Application\\MoviesAPI.Application.csproj": {
+                "projectPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\Application\\MoviesAPI.Application.csproj"
+              },
+              "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Domain\\MoviesAPI.Domain.csproj": {
+                "projectPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Domain\\MoviesAPI.Domain.csproj"
+              },
+              "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.Data\\MoviesAPI.Infra.Data.csproj": {
+                "projectPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.Data\\MoviesAPI.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+        "projectName": "MoviesAPI",
+        "projectPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+        "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
+        "outputPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Windows 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\Application\\MoviesAPI.Application.csproj": {
+                "projectPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\Application\\MoviesAPI.Application.csproj"
+              },
+              "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.IoC\\MoviesAPI.Infra.IoC.csproj": {
+                "projectPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.IoC\\MoviesAPI.Infra.IoC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

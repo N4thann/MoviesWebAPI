@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D8BAA40-DB11-48A1-9662-DF66D3C19463}|MoviesAPI.Infra.IoC\\MoviesAPI.Infra.IoC.csproj|d:\\nathan\\projetos .net\\moviesapi\\moviesapi.infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D8BAA40-DB11-48A1-9662-DF66D3C19463}|MoviesAPI.Infra.IoC\\MoviesAPI.Infra.IoC.csproj|solutionrelative:moviesapi.infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 882,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.IoC\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "MoviesAPI.Infra.IoC\\DependencyInjection.cs",
+              "ToolTip": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.IoC\\DependencyInjection.cs",
+              "RelativeToolTip": "MoviesAPI.Infra.IoC\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T23:56:18.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 845,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 259,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
