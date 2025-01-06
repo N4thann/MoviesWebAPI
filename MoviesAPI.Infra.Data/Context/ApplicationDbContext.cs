@@ -7,7 +7,7 @@ namespace MoviesAPI.Infra.Data.Context
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-        }
 
+        }
     }
 }

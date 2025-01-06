@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MoviesAPI.Infra.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c9593be79dcdd35040e708686443325ea7b728a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d49a25929c3f0b52a2da33b5857773cf7bac5f19")]
 [assembly: System.Reflection.AssemblyProductAttribute("MoviesAPI.Infra.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MoviesAPI.Infra.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
