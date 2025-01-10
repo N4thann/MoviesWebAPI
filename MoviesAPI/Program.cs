@@ -21,13 +21,10 @@ if (app.Environment.IsDevelopment())
     app.ConfigureExceptionHandler();//Configuração do Middleware de Exceção, apenas no ambiente Developer
 }
 
-app.Use(async (context, next) =>
-{
-    var token = context.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
-
-    if (!string.IsNullOrEmpty(token))
+builder.Services.AddAuthentication("Bearer")
+    .AddJwtBearer(options =>
     {
-        var validationParameters = new TokenValidationParameters
+        options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuer = true,
             ValidateAudience = true,
@@ -37,22 +34,7 @@ app.Use(async (context, next) =>
             ValidAudience = "MoviesAPI",
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("supersecretkey123"))
         };
-
-        var handler = new JwtSecurityTokenHandler();
-        try
-        {
-            var principal = handler.ValidateToken(token, validationParameters, out _);
-            context.User = principal;
-        }
-        catch
-        {
-            context.Response.StatusCode = StatusCodes.Status401Unauthorized;
-            return;
-        }
-    }
-
-    await next();
-});
+    });
 
 app.UseHttpsRedirection();
 
