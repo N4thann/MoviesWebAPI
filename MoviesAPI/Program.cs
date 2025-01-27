@@ -1,5 +1,6 @@
 using Microsoft.IdentityModel.Tokens;
 using MoviesAPI.Extensions;
+using MoviesAPI.Filters;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 
@@ -10,6 +11,8 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<ApiLoggingFilter>();
 
 var app = builder.Build();
 
