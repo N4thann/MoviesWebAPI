@@ -1,77 +1,74 @@
-﻿namespace MoviesAPI.Domain.Entities
+﻿using MoviesAPI.Domain.SeedWork;
+
+namespace MoviesAPI.Domain.Entities
 {
     /// <summary>
-    /// Represents a movie with details such as title, synopsis, release year, runtime, ratings, and associated awards.
+    /// Representa um filme com detalhes como título, sinopse, ano de lançamento, duração, avaliações e premiações associadas.
     /// </summary>
-    public class Movie
+    public class Movie : BaseEntity
     {
         /// <summary>
-        /// Gets or sets the unique identifier of the movie.
-        /// </summary>
-        public int Id { get; set; }
-
-        /// <summary>
-        /// Gets or sets the title of the movie.
+        /// Título do filme.
         /// </summary>
         public string Title { get; set; }
 
         /// <summary>
-        /// Gets or sets the synopsis of the movie.
+        /// Sinopse do filme, contendo um resumo da história.
         /// </summary>
         public string Synopsis { get; set; }
 
         /// <summary>
-        /// Gets or sets the release year of the movie.
+        /// Ano de lançamento do filme.
         /// </summary>
         public int ReleaseYear { get; set; }
 
         /// <summary>
-        /// Gets or sets the runtime of the movie in minutes.
+        /// Duração do filme em minutos.
         /// </summary>
         public int Runtime { get; set; }
 
         /// <summary>
-        /// Gets or sets the total number of ratings the movie has received.
+        /// Número total de avaliações que o filme recebeu.
         /// </summary>
         public int TotalRatings { get; set; }
 
         /// <summary>
-        /// Gets or sets the sum of all ratings given to the movie.
+        /// Soma de todas as notas dadas ao filme.
         /// </summary>
         public int SumOfRatings { get; set; }
 
         /// <summary>
-        /// Gets the average rating of the movie, calculated automatically based on the sum of ratings and the total number of ratings.
+        /// Nota média do filme, calculada automaticamente com base na soma das notas e no total de avaliações.
         /// </summary>
         public double Rating => TotalRatings > 0 ? (double)SumOfRatings / TotalRatings : 0;
 
         /// <summary>
-        /// Gets or sets the URL of the movie trailer.
+        /// URL do trailer do filme.
         /// </summary>
         public string Trailer { get; set; }
 
         /// <summary>
-        /// Gets or sets the identifier of the movie's nationality.
+        /// Identificador da nacionalidade do filme.
         /// </summary>
-        public int NationalityId { get; set; }
+        public Guid NationalityId { get; set; }
 
         /// <summary>
-        /// Gets or sets the identifier of the studio that produced the movie.
+        /// Identificador do estúdio que produziu o filme.
         /// </summary>
-        public int StudioId { get; set; }
+        public Guid StudioId { get; set; }
 
         /// <summary>
-        /// Gets or sets the identifier of the director of the movie.
+        /// Identificador do diretor responsável pelo filme.
         /// </summary>
-        public int DirectorId { get; set; }
+        public Guid DirectorId { get; set; }
 
         /// <summary>
-        /// Gets or sets the list of image URLs associated with the movie.
+        /// Lista de URLs das imagens associadas ao filme.
         /// </summary>
-        public List<string> Images { get; set; }
+        public virtual ICollection<string> Images { get; set; }
 
         /// <summary>
-        /// Gets or sets the collection of awards received by the movie.
+        /// Coleção de prêmios recebidos pelo filme.
         /// </summary>
         public virtual ICollection<Award> Awards { get; set; }
     }

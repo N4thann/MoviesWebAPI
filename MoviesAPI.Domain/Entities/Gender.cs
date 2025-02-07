@@ -1,12 +1,22 @@
-﻿using System;
+﻿using MoviesAPI.Domain.SeedWork;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MoviesAPI.Domain.Entities
 {
-    public class Gender
+    /// <summary>
+    /// Representa um gênero cinematográfico, como terror, comédia ou ação.
+    /// </summary>
+    public class Gender : BaseEntity
     {
+        /// <summary>
+        /// Nome do gênero do filme.
+        /// </summary>
+        public string Name { get; set; }
+
+        /// <summary>
+        /// Lista de filmes que pertencem a esse gênero.
+        /// </summary>
+        public virtual ICollection<Movie> Movies { get; set; }
     }
 }
