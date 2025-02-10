@@ -10,11 +10,6 @@ namespace MoviesAPI.Domain.Entities
     public class Director : BaseEntity
     {
         /// <summary>
-        /// Nome do diretor.
-        /// </summary>
-        public string Name { get; set; }
-
-        /// <summary>
         /// Idade do diretor. Esse campo será atualizado automaticamente com base na data de aniversário.
         /// </summary>
         public int Age { get; set; }

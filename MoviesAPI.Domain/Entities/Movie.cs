@@ -8,11 +8,6 @@ namespace MoviesAPI.Domain.Entities
     public class Movie : BaseEntity
     {
         /// <summary>
-        /// Título do filme.
-        /// </summary>
-        public string Title { get; set; }
-
-        /// <summary>
         /// Sinopse do filme, contendo um resumo da história.
         /// </summary>
         public string Synopsis { get; set; }

@@ -17,6 +17,11 @@ namespace MoviesAPI.Domain.SeedWork
         public Guid Id { get; protected set; }
 
         /// <summary>
+        /// Nome da entidade.
+        /// </summary>
+        public string Name { get; set; }
+
+        /// <summary>
         /// Inicializa uma nova instância da entidade base com um identificador único.
         /// </summary>
         protected BaseEntity() => Id = Guid.NewGuid();

@@ -13,8 +13,8 @@ namespace MoviesAPI.Domain.Entities
     public class Award : BaseEntity
     {
         /// <summary>
-        /// Nome do prêmio, como "Oscar" ou "Globo de Ouro".
+        /// Ano da premiação
         /// </summary>
-        public string Name { get; set; }
+        public int ReleaseYear { get; set; }
     }
 }

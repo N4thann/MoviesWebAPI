@@ -10,11 +10,6 @@ namespace MoviesAPI.Domain.Entities
     public class Studio : BaseEntity
     {
         /// <summary>
-        /// Nome do estúdio de cinema.
-        /// </summary>
-        public string Name { get; set; }
-
-        /// <summary>
         /// Descrição sobre o estúdio, incluindo sua história ou especialização.
         /// </summary>
         public string Description { get; set; }

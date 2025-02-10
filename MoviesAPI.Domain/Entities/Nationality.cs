@@ -7,9 +7,5 @@ namespace MoviesAPI.Domain.Entities
     /// </summary>
     public class Nationality : BaseEntity
     {
-        /// <summary>
-        /// Nome do País de origem.
-        /// </summary>
-        public string Name { get; set; }
     }
 }

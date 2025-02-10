@@ -1,9 +1,9 @@
-# Ignorar configurações de usuário específicas do Visual Studio
+# Ignorar configuraÃ§Ãµes de usuÃ¡rio especÃ­ficas do Visual Studio
 .vs/
 *.user
 *.suo
 
-# Ignorar configurações de build
+# Ignorar configuraÃ§Ãµes de build
 bin/
 obj/
 
@@ -13,7 +13,7 @@ packages/
 # Ignorar arquivos de log
 *.log
 
-# Ignorar arquivos de configuração sensíveis
+# Ignorar arquivos de configuraÃ§Ã£o sensÃ­veis
 appsettings.json
 appsettings.Development.json
 .env
