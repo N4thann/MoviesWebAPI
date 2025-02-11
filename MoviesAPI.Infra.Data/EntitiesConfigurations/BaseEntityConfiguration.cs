@@ -11,9 +11,11 @@ using System.Reflection.Emit;
 
 namespace MoviesAPI.Infra.Data.EntitiesConfigurations
 {
-    //Essa configuração segue o príncipio do DRY, pegando as configurações comuns
-    //entre as 3 entidades e centralizando aqui. Nas outras entityconfigurations utilizamos
-    //o método AppendConfig, visto que as outras configurações herdam essa
+    /// <summary>
+    /// Configura as propriedades comuns a todas as entidades base, como chave primária e nome.
+    /// Chama o método abstrato <see cref="AppendConfig(EntityTypeBuilder{T})"/> para configurações específicas da entidade.
+    /// </summary>
+    /// <param name="builder">Objeto <see cref="EntityTypeBuilder{T}"/> usado para configurar a entidade.</param>
     public abstract class BaseEntityConfiguration<T> : IEntityTypeConfiguration<T>
         where T : BaseEntity
     {
@@ -22,8 +24,9 @@ namespace MoviesAPI.Infra.Data.EntitiesConfigurations
             // Chave primária
             builder.HasKey(b => b.Id);
 
+            // Gera um GUID automaticamente no SQL Server
             builder.Property(g => g.Id)
-            .HasDefaultValueSql("NEWID()"); // Gera um GUID automaticamente no SQL Server
+            .HasDefaultValueSql("NEWID()"); 
 
             // Propriedade Name
             builder.Property(b => b.Name)
@@ -34,6 +37,11 @@ namespace MoviesAPI.Infra.Data.EntitiesConfigurations
             AppendConfig(builder);
         }
 
+        /// <summary>
+        /// Método abstrato para definir configurações específicas de cada entidade concreta.
+        /// Deve ser implementado pelas classes que herdam <see cref="BaseEntityConfiguration{T}"/>.
+        /// </summary>
+        /// <param name="builder">Objeto <see cref="EntityTypeBuilder{T}"/> usado para definir configurações adicionais.</param>
         protected abstract void AppendConfig(EntityTypeBuilder<T> builder);
     }
 }
