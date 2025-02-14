@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D8BAA40-DB11-48A1-9662-DF66D3C19463}|MoviesAPI.Infra.IoC\\MoviesAPI.Infra.IoC.csproj|d:\\nathan\\projetos .net\\moviesapi\\moviesapi.infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D8BAA40-DB11-48A1-9662-DF66D3C19463}|MoviesAPI.Infra.IoC\\MoviesAPI.Infra.IoC.csproj|solutionrelative:moviesapi.infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43E9A258-5592-4D17-9DE4-723DD2885495}|MoviesAPI.Infra.Data\\MoviesAPI.Infra.Data.csproj|d:\\nathan\\projetos .net\\moviesapi\\moviesapi.infra.data\\entitiesconfigurations\\directorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43E9A258-5592-4D17-9DE4-723DD2885495}|MoviesAPI.Infra.Data\\MoviesAPI.Infra.Data.csproj|solutionrelative:moviesapi.infra.data\\entitiesconfigurations\\directorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1244F0-C70E-4E77-8374-87110EFA5CF0}|MoviesAPI.Domain\\MoviesAPI.Domain.csproj|d:\\nathan\\projetos .net\\moviesapi\\moviesapi.domain\\entities\\director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D1244F0-C70E-4E77-8374-87110EFA5CF0}|MoviesAPI.Domain\\MoviesAPI.Domain.csproj|solutionrelative:moviesapi.domain\\entities\\director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43E9A258-5592-4D17-9DE4-723DD2885495}|MoviesAPI.Infra.Data\\MoviesAPI.Infra.Data.csproj|d:\\nathan\\projetos .net\\moviesapi\\moviesapi.infra.data\\entitiesconfigurations\\movieconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43E9A258-5592-4D17-9DE4-723DD2885495}|MoviesAPI.Infra.Data\\MoviesAPI.Infra.Data.csproj|solutionrelative:moviesapi.infra.data\\entitiesconfigurations\\movieconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43E9A258-5592-4D17-9DE4-723DD2885495}|MoviesAPI.Infra.Data\\MoviesAPI.Infra.Data.csproj|d:\\nathan\\projetos .net\\moviesapi\\moviesapi.infra.data\\entitiesconfigurations\\baseentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43E9A258-5592-4D17-9DE4-723DD2885495}|MoviesAPI.Infra.Data\\MoviesAPI.Infra.Data.csproj|solutionrelative:moviesapi.infra.data\\entitiesconfigurations\\baseentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D1244F0-C70E-4E77-8374-87110EFA5CF0}|MoviesAPI.Domain\\MoviesAPI.Domain.csproj|d:\\nathan\\projetos .net\\moviesapi\\moviesapi.domain\\entities\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D1244F0-C70E-4E77-8374-87110EFA5CF0}|MoviesAPI.Domain\\MoviesAPI.Domain.csproj|solutionrelative:moviesapi.domain\\entities\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90967E1B-54B1-4C77-8A60-BAFF759A1B44}|MoviesAPI\\MoviesAPI.csproj|d:\\nathan\\projetos .net\\moviesapi\\moviesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90967E1B-54B1-4C77-8A60-BAFF759A1B44}|MoviesAPI\\MoviesAPI.csproj|solutionrelative:moviesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,25 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 882,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.IoC\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "MoviesAPI.Infra.IoC\\DependencyInjection.cs",
-              "ToolTip": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.IoC\\DependencyInjection.cs",
-              "RelativeToolTip": "MoviesAPI.Infra.IoC\\DependencyInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T23:56:18.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -44,6 +47,82 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Director.cs",
+              "DocumentMoniker": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Domain\\Entities\\Director.cs",
+              "RelativeDocumentMoniker": "MoviesAPI.Domain\\Entities\\Director.cs",
+              "ToolTip": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Domain\\Entities\\Director.cs",
+              "RelativeToolTip": "MoviesAPI.Domain\\Entities\\Director.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T00:36:09.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DirectorConfiguration.cs",
+              "DocumentMoniker": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.Data\\EntitiesConfigurations\\DirectorConfiguration.cs",
+              "RelativeDocumentMoniker": "MoviesAPI.Infra.Data\\EntitiesConfigurations\\DirectorConfiguration.cs",
+              "ToolTip": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.Data\\EntitiesConfigurations\\DirectorConfiguration.cs",
+              "RelativeToolTip": "MoviesAPI.Infra.Data\\EntitiesConfigurations\\DirectorConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T00:35:11.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Domain\\Entities\\Movie.cs",
+              "RelativeDocumentMoniker": "MoviesAPI.Domain\\Entities\\Movie.cs",
+              "ToolTip": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Domain\\Entities\\Movie.cs",
+              "RelativeToolTip": "MoviesAPI.Domain\\Entities\\Movie.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAADwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T23:26:29.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BaseEntityConfiguration.cs",
+              "DocumentMoniker": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.Data\\EntitiesConfigurations\\BaseEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "MoviesAPI.Infra.Data\\EntitiesConfigurations\\BaseEntityConfiguration.cs",
+              "ToolTip": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.Data\\EntitiesConfigurations\\BaseEntityConfiguration.cs",
+              "RelativeToolTip": "MoviesAPI.Infra.Data\\EntitiesConfigurations\\BaseEntityConfiguration.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T22:42:10.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MovieConfiguration.cs",
+              "DocumentMoniker": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.Data\\EntitiesConfigurations\\MovieConfiguration.cs",
+              "RelativeDocumentMoniker": "MoviesAPI.Infra.Data\\EntitiesConfigurations\\MovieConfiguration.cs",
+              "ToolTip": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI.Infra.Data\\EntitiesConfigurations\\MovieConfiguration.cs",
+              "RelativeToolTip": "MoviesAPI.Infra.Data\\EntitiesConfigurations\\MovieConfiguration.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAgwEwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T21:42:14.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI\\Program.cs",
+              "RelativeDocumentMoniker": "MoviesAPI\\Program.cs",
+              "ToolTip": "D:\\NATHAN\\PROJETOS .NET\\MoviesAPI\\MoviesAPI\\Program.cs",
+              "RelativeToolTip": "MoviesAPI\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-27T14:55:09.475Z"
             }
           ]
         },

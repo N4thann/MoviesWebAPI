@@ -8,9 +8,11 @@
 
   <ItemGroup>
     <Folder Include="BackgroundJob\" />
+    <Folder Include="Commands\Handlers\" />
+    <Folder Include="Commands\Models\" />
     <Folder Include="DTOs\" />
-    <Folder Include="Commands\" />
-    <Folder Include="Queries\" />
+    <Folder Include="Queries\Handlers\" />
+    <Folder Include="Queries\Models\" />
     <Folder Include="Validators\" />
     <Folder Include="Services\" />
   </ItemGroup>
@@ -27,6 +29,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="MongoDB.Bson" Version="3.1.0" />
+    <PackageReference Include="MongoDB.Driver" Version="3.1.0" />
   </ItemGroup>
 
   <ItemGroup>
