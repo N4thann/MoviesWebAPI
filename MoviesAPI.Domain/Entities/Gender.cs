@@ -9,6 +9,10 @@ namespace MoviesAPI.Domain.Entities
     /// </summary>
     public class Gender : BaseEntity
     {
+        public Gender() 
+        {
+            Movies = new List<Movie>();
+        }
         /// <summary>
         /// Lista de filmes que pertencem a esse gênero.
         /// </summary>

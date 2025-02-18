@@ -46,27 +46,34 @@ namespace MoviesAPI.Infra.Data.EntitiesConfigurations
                    .HasMaxLength(255)
                    .IsRequired();
 
-            builder.Property(m => m.NationalityId)
-                   .HasColumnName("NationalityId")
-                   .IsRequired();
+            //É boa prática definir explicitamente os relacionamentos
+            //com .HasOne(), garantindo a integridade referencial.
+            //Isso evita que registros dependentes sejam deletados acidentalmente.
+            builder.HasOne<Nationality>()
+               .WithMany()
+               .HasForeignKey(m => m.NationalityId)
+               .OnDelete(DeleteBehavior.Restrict);
 
-            builder.Property(m => m.StudioId)
-                   .HasColumnName("StudioId")
-                   .IsRequired();
+            builder.HasOne<Studio>()
+                   .WithMany()
+                   .HasForeignKey(m => m.StudioId)
+                   .OnDelete(DeleteBehavior.Restrict);
 
-            builder.Property(m => m.DirectorId)
-                   .HasColumnName("DirectorId")
-                   .IsRequired();
+            builder.HasOne<Director>()
+                   .WithMany()
+                   .HasForeignKey(m => m.DirectorId)
+                   .OnDelete(DeleteBehavior.Restrict);
 
-            //"imgBuilder" é apenas um nome para o sub-builder que o método OwnsMany() fornece.
-            //Esse sub-builder nos permite configurar a tabela MovieImages dentro da MovieConfiguration.
-            // Um Filme tem muitas Imagens
-            builder.OwnsMany(m => m.Images, imgBuilder =>
-            {
-                imgBuilder.ToTable("MovieImages");
-                imgBuilder.WithOwner().HasForeignKey("MovieId");
-                imgBuilder.Property<string>("ImageUrl").HasColumnName("ImageUrl").HasMaxLength(500);
-            });
+            builder.HasOne<Gender>()
+                   .WithMany()
+                   .HasForeignKey(m => m.DirectorId)
+                   .OnDelete(DeleteBehavior.Restrict);
+
+            // Relacionamento 1:N entre Movie e MovieImage
+            builder.HasMany<MovieImage>()
+                   .WithOne()
+                   .HasForeignKey(mi => mi.MovieId)
+                   .OnDelete(DeleteBehavior.Cascade);
 
             // Um Filme tem muitos Prêmios
             builder.HasMany(m => m.Awards)

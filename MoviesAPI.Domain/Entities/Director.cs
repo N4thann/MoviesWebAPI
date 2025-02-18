@@ -9,6 +9,11 @@ namespace MoviesAPI.Domain.Entities
     /// </summary>
     public class Director : BaseEntity
     {
+        public Director() 
+        {
+            Movies = new List<Movie>();
+            Awards = new List<Award>();
+        }
         /// <summary>
         /// Idade do diretor. Esse campo será atualizado automaticamente com base na data de aniversário.
         /// </summary>

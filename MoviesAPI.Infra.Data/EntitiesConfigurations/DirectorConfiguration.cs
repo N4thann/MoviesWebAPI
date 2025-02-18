@@ -35,13 +35,13 @@ namespace MoviesAPI.Infra.Data.EntitiesConfigurations
             // Um Diretor tem muitos Prêmios
             builder.HasMany(m => m.Awards)
                    .WithOne()
-                   .HasForeignKey("AwardId")
+                   .HasForeignKey("DirectorId")
                    .OnDelete(DeleteBehavior.Cascade);
 
-            // Um Diretor tem muitos FIlmes
+            // Um Diretor tem muitos Filmes
             builder.HasMany(m => m.Movies)
                    .WithOne()
-                   .HasForeignKey("MovieId")
+                   .HasForeignKey("DirectorId")
                    .OnDelete(DeleteBehavior.Cascade);
         }
     }

@@ -7,6 +7,11 @@ namespace MoviesAPI.Domain.Entities
     /// </summary>
     public class Movie : BaseEntity
     {
+        public Movie() 
+        {
+            Images = new List<string>();
+            Awards = new List<Award>();           
+        }
         /// <summary>
         /// Sinopse do filme, contendo um resumo da história.
         /// </summary>
@@ -58,9 +63,14 @@ namespace MoviesAPI.Domain.Entities
         public Guid DirectorId { get; set; }
 
         /// <summary>
+        /// Identificador do diretor responsável pelo filme.
+        /// </summary>
+        public Guid GenderId { get; set; }
+
+        /// <summary>
         /// Lista de URLs das imagens associadas ao filme.
         /// </summary>
-        public virtual ICollection<string> Images { get; set; }
+        public virtual ICollection<MovieImage> Images { get; set; }
 
         /// <summary>
         /// Coleção de prêmios recebidos pelo filme.

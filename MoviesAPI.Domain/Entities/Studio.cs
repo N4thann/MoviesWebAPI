@@ -9,9 +9,15 @@ namespace MoviesAPI.Domain.Entities
     /// </summary>
     public class Studio : BaseEntity
     {
+        public Studio() 
+        {
+            Movies = new List<Movie>();
+        } 
         /// <summary>
         /// Descrição sobre o estúdio, incluindo sua história ou especialização.
         /// </summary>
         public string Description { get; set; }
+
+        public virtual ICollection<Movie> Movies { get; set; }
     }
 }
