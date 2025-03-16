@@ -1,4 +1,5 @@
-﻿using MoviesAPI.Domain.SeedWork;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using MoviesAPI.Domain.SeedWork;
 
 namespace MoviesAPI.Domain.Entities
 {
@@ -9,7 +10,7 @@ namespace MoviesAPI.Domain.Entities
     {
         public Movie() 
         {
-            Images = new List<string>();
+            Images = new List<MovieImage>();
             Awards = new List<Award>();           
         }
         /// <summary>
@@ -50,21 +51,25 @@ namespace MoviesAPI.Domain.Entities
         /// <summary>
         /// Identificador da nacionalidade do filme.
         /// </summary>
+        [BsonIgnoreIfNull]
         public Guid NationalityId { get; set; }
 
         /// <summary>
         /// Identificador do estúdio que produziu o filme.
         /// </summary>
+        [BsonIgnoreIfNull]
         public Guid StudioId { get; set; }
 
         /// <summary>
         /// Identificador do diretor responsável pelo filme.
         /// </summary>
+        [BsonIgnoreIfNull]
         public Guid DirectorId { get; set; }
 
         /// <summary>
         /// Identificador do diretor responsável pelo filme.
         /// </summary>
+        [BsonIgnoreIfNull]
         public Guid GenderId { get; set; }
 
         /// <summary>

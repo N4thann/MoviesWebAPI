@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using MoviesAPI.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MoviesAPI.Infra.Data.EntitiesConfigurations
 {
@@ -46,36 +41,40 @@ namespace MoviesAPI.Infra.Data.EntitiesConfigurations
                    .HasMaxLength(255)
                    .IsRequired();
 
-            //É boa prática definir explicitamente os relacionamentos
-            //com .HasOne(), garantindo a integridade referencial.
-            //Isso evita que registros dependentes sejam deletados acidentalmente.
+            // Ignorar as chaves estrangeiras no EF Core (deixar apenas para o MongoDB)
+            builder.Ignore(m => m.NationalityId);
+            builder.Ignore(m => m.StudioId);
+            builder.Ignore(m => m.DirectorId);
+            builder.Ignore(m => m.GenderId);
+
+            // Configuração dos relacionamentos sem precisar das chaves estrangeiras explícitas
             builder.HasOne<Nationality>()
-               .WithMany()
-               .HasForeignKey(m => m.NationalityId)
-               .OnDelete(DeleteBehavior.Restrict);
+                   .WithMany()
+                   .HasForeignKey("NationalityId")
+                   .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasOne<Studio>()
                    .WithMany()
-                   .HasForeignKey(m => m.StudioId)
-                   .OnDelete(DeleteBehavior.Restrict);
+                   .HasForeignKey("StudioId")
+                   .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasOne<Director>()
                    .WithMany()
-                   .HasForeignKey(m => m.DirectorId)
-                   .OnDelete(DeleteBehavior.Restrict);
+                   .HasForeignKey("DirectorId")
+                   .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasOne<Gender>()
                    .WithMany()
-                   .HasForeignKey(m => m.DirectorId)
-                   .OnDelete(DeleteBehavior.Restrict);
-
-            // Relacionamento 1:N entre Movie e MovieImage
-            builder.HasMany<MovieImage>()
-                   .WithOne()
-                   .HasForeignKey(mi => mi.MovieId)
+                   .HasForeignKey("GenderId")
                    .OnDelete(DeleteBehavior.Cascade);
 
-            // Um Filme tem muitos Prêmios
+            // Relacionamento 1:N entre Movie e MovieImage
+            builder.HasMany(m => m.Images)
+                   .WithOne()
+                   .HasForeignKey("MovieId")
+                   .OnDelete(DeleteBehavior.Cascade);
+
+            // Relacionamento 1:N entre Movie e Awards
             builder.HasMany(m => m.Awards)
                    .WithOne()
                    .HasForeignKey("MovieId")
@@ -83,4 +82,3 @@ namespace MoviesAPI.Infra.Data.EntitiesConfigurations
         }
     }
 }
- 

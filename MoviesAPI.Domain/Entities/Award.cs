@@ -1,4 +1,5 @@
-﻿using MoviesAPI.Domain.SeedWork;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using MoviesAPI.Domain.SeedWork;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,11 +21,13 @@ namespace MoviesAPI.Domain.Entities
         /// <summary>
         /// Chave estrangeira que referencia o filme premiado.
         /// </summary>
+        [BsonIgnoreIfNull]
         public Guid MovieId { get; set; }
 
         /// <summary>
         /// Chave estrangeira que referencia o Diretor premiado.
         /// </summary>
+        [BsonIgnoreIfNull]
         public Guid DirectorId { get; set; }
     }
 }
